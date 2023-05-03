@@ -29,7 +29,7 @@ body{
  }
 
 .Card:hover::after{
-  width : 100%;
+  width : 20%;
  }
 
 .Card a{
