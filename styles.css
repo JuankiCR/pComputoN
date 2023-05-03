@@ -1,0 +1,44 @@
+body{
+  box-sizing : borderbox;
+  background-color : #212121;
+}
+
+.Card{
+  width : 80%;
+  background-color : #696969;
+  color : white;
+  margin : auto;
+  margin-bottom : 16px;
+  border-radius : 16px;
+  padding : 0 16px;
+  text-align: center;
+  overflow : hidden;
+  position : relative;
+}
+
+.Card::after{
+  transition: width 1s;
+  content : "";
+  position : absolute;
+  background-color : #E5C687;
+  top : 0;
+  left : 0;
+  width : 16px;
+  height : 100%;
+  z-index : 5;
+ }
+
+.Card:hover::after{
+  width : 100%;
+ }
+
+.Card a{
+  transiton: color ease 1s;
+  color: #E0FBFC;
+  
+  z-index : 10;
+}
+
+.Card a:hover{
+  color: #F0BCD4;
+}
